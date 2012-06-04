@@ -1,0 +1,15 @@
+{
+    "id": "test-post",
+    "name": "Test Post",
+    "description": "This is a test blog-engine post.",
+    "file": "test-post.md",
+    "author": "Daniel D. Shaw <dshaw@dshaw.com> (http://dshaw.com)",
+    "keywords": [
+        "blog-engine",
+        "test",
+        "node.js"
+    ],
+    "folder": "/Users/dshaw/Dropbox/Voxer/code/blog-engine/test/fixtures/blog/posts/test-post",
+    "format": "md",
+    "content": "# This is the title\n\n[A link](http://voxer.com)\n\n```js\n// code\nconsole.log(\"blog it!\")\n```\n\nGreat, this might actually work."
+}

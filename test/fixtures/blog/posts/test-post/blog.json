@@ -1,0 +1,12 @@
+{
+    "id": "test-post",
+    "name": "Test Post",
+    "description": "This is a test blog-engine post.",
+    "file": "test-post.md",
+    "author": "Daniel D. Shaw <dshaw@dshaw.com> (http://dshaw.com)",
+    "keywords": [
+        "blog-engine",
+        "test",
+        "node.js"
+    ]
+}

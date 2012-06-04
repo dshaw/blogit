@@ -1,0 +1,5 @@
+<% if (entries.length) { %>
+  <% entries.forEach(function(entry) { %>
+    <%- include("entry.ejs", { entry: entry }) %>
+  <% }) %>
+<% } %>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>blogit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5, minimum-scale=0.5">
+</head>
+<body class="">
+  <section id="sidebar" class="fixed">
+  </section>
+  <section id="posts">
+    <header>
+      <h1>Summer of Node.js blog</h1>
+      <h3 class="date">June 04, 2012</h3>
+    </header>
+    <%- include("entries.ejs", { entries: entries }) %>
+
+    <footer id="paginate">
+      <nav class="pagination">
+        <span class="page current">1</span>
+        <span class="page"><a href="/page/2" rel="next">2</a></span>
+        <span class="page gap"></span>
+        <span class="next"><a href="/page/2" rel="next">Continue&nbsp;&nbsp;&nbsp;&rarr;</a></span>
+        <span class="last"><a href="/page/19">Last</a></span>
+      </nav>
+    </footer>
+  </section>
+</body>
+</html>
