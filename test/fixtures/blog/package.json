@@ -1,0 +1,15 @@
+{
+  "author": "",
+  "name": "blogit-test",
+  "description": "Test blog for blogit.",
+  "version": "0.0.1",
+  "main": "./index",
+  "dependencies": {
+    "blogit": "0.0.2"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
