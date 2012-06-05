@@ -1,7 +1,7 @@
 blogit
 ======
 
-Minimalist Node.js blog engine using Markdown and git for storage.
+Minimalist Node.js blog engine using Markdown and Git for storage.
 
 ## Status
 

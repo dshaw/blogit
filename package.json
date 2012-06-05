@@ -1,7 +1,7 @@
 {
   "name": "blogit",
-  "version": "0.0.3",
-  "description": "Node.js git based blog engine.",
+  "version": "0.0.4",
+  "description": "Minimalist Node.js blog engine using Markdown and Git for storage.",
   "keywords": [
     "blog",
     "blogging",
@@ -27,7 +27,8 @@
     "marked": "~0.2.5",
     "optimist": "~0.3.4",
     "ejs": "~0.7.1",
-    "async": "~0.1.22"
+    "async": "~0.1.22",
+    "mapleTree": "~0.1.8"
   },
   "devDependencies": {
     "mocha": "~1.1.0",

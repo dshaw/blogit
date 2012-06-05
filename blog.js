@@ -8,11 +8,15 @@
  * Module dependencies.
  */
 
-var http = require('http')
+var fs = require('fs')
+  , http = require('http')
+  , path = require('path')
   , ejs = require('ejs')
   , optimist = require('optimist')
   , Templar = require('templar')
   , posts = require('./lib/posts')
+  , maple = require('mapleTree')
+  , router = new maple.RouteTree()
   , defaults = { port: 9000, engine: 'ejs', posts: './posts', templates: './templates' }
   , options = null
 
@@ -49,11 +53,28 @@ function blog(options) {
   // preload templates
   Templar.loadFolder(templarOptions.folder)
 
-  return http.createServer(function (req, res) {
-    posts(req, options, function (err, entries) {
-      // note that this causes a sync fs hit the first time if the folder has not been loaded yet.
+  // router configuration
+  router.define('/', function (req, res) {
+    posts(options, function (err, entries) {
       res.template = Templar(req, res, templarOptions)
-      res.template('layout.ejs', { entries:entries })
+      res.template('layout.ejs', { entries: entries })
     })
+  })
+
+  // route static files
+  router.define('/*', function (req, res) {
+    var file = path.join('public', req.url)
+    fs.readFile(file, function (err, data) {
+      if (err) {
+        res.statusCode = 404
+        return res.end()
+      }
+
+      res.end(data)
+    })
+  })
+
+  return http.createServer(function (req, res) {
+    router.match(req.url).fn(req, res)
   }).listen(options.port)
 }
