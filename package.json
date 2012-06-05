@@ -1,10 +1,13 @@
 {
   "name": "blogit",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Node.js git based blog engine.",
   "keywords": [
     "blog",
-    "git"
+    "blogging",
+    "git",
+    "md",
+    "markdown"
   ],
   "author": "Daniel D. Shaw <dshaw@dshaw.com> (http://dshaw.com)",
   "repository": {
@@ -24,7 +27,6 @@
     "marked": "~0.2.5",
     "optimist": "~0.3.4",
     "ejs": "~0.7.1",
-    "lodash": "~0.2.2",
     "async": "~0.1.22"
   },
   "devDependencies": {
