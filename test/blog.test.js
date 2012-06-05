@@ -12,14 +12,14 @@ describe("Blog", function () {
         blog = Blog({ port: port, posts: "./test/fixtures/blog/posts", templates: "./test/fixtures/blog/templates" });
 
         blog.on('listening', function () {
-            console.log("Blog listening.")
+            //debug("Blog listening.")
             done()
         })
     });
 
     it("should serve up the blog", function(done) {
         request("http://localhost:9000", function (err, res, body) {
-            debug(body);
+            //debug(body);
             assert.equal(typeof body, "string");
             assert.equal(body.slice(0, 15), "<!DOCTYPE html>");
             done();
