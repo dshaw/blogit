@@ -1,7 +1,11 @@
 {
-  "name":"blogit",
-  "description":"Node.js git based blog engine.",
-  "keywords": ["blog", "git"],
+  "name": "blogit",
+  "version": "0.0.2",
+  "description": "Node.js git based blog engine.",
+  "keywords": [
+    "blog",
+    "git"
+  ],
   "author": "Daniel D. Shaw <dshaw@dshaw.com> (http://dshaw.com)",
   "repository": {
     "type": "git",
@@ -10,24 +14,25 @@
   "bugs": {
     "url": "http://github.com/dshaw/blogit/issues"
   },
-  "version":"0.0.2",
-  "main":"./blog",
-  "scripts":{
+  "license": "MIT",
+  "main": "./blog",
+  "scripts": {
     "test": "NODE_ENV=test ./node_modules/.bin/mocha"
   },
-  "dependencies":{
-    "templar":"0.0.5",
-    "marked":"~0.2.5",
-    "optimist":"~0.3.4",
-    "ejs":"~0.7.1",
-    "lodash":"~0.2.2"
+  "dependencies": {
+    "templar": "0.0.5",
+    "marked": "~0.2.5",
+    "optimist": "~0.3.4",
+    "ejs": "~0.7.1",
+    "lodash": "~0.2.2",
+    "async": "~0.1.22"
   },
-  "devDependencies":{
-    "mocha":"~1.1.0",
-    "request":"~2.9.202"
+  "devDependencies": {
+    "mocha": "~1.1.0",
+    "request": "~2.9.202"
   },
-  "optionalDependencies":{},
-  "engines":{
-    "node":"*"
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
   }
 }
