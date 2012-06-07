@@ -1,6 +1,6 @@
 {
   "name": "blogit",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Minimalist Node.js blog engine using Markdown and Git for storage.",
   "keywords": [
     "blog",
