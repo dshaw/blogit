@@ -1,4 +1,10 @@
 
+0.0.4 / 2012-06-05
+==================
+
+  * Basic handling of static content.
+  * Cleaned up internal apis.
+
 0.0.3 / 2012-06-05
 ==================
 
